@@ -50,5 +50,7 @@ func runServer(workDir string) {
 			LastSeen: time.Now(),
 			Conn:     c,
 		}
+
+		sendAllFiles(workDir, clients[c])
 	}
 }
